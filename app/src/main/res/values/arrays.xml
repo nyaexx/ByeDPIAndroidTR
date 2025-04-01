@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="themes">
-        <item name="system">System</item>
-        <item name="light">Light</item>
-        <item name="dark">Dark</item>
+        <item name="system">Sistem</item>
+        <item name="light">Açık</item>
+        <item name="dark">Koyu</item>
     </array>
     <array name="themes_entries">
-        <item name="system">system</item>
-        <item name="light">light</item>
-        <item name="dark">dark</item>
+        <item name="system">sistem</item>
+        <item name="light">açık</item>
+        <item name="dark">koyu</item>
     </array>
 
     <array name="byedpi_modes">
@@ -38,13 +38,13 @@
     </array>
 
     <array name="byedpi_hosts_modes">
-        <item name="disable">Disable</item>
-        <item name="blacklist">Blacklist</item>
-        <item name="whitelist">Whitelist</item>
+        <item name="disable">Kapalı</item>
+        <item name="blacklist">Kara liste</item>
+        <item name="whitelist">Beyaz liste</item>
     </array>
     <array name="byedpi_hosts_modes_entries">
-        <item name="disable">disable</item>
-        <item name="blacklist">blacklist</item>
-        <item name="whitelist">whitelist</item>
+        <item name="disable">kapalı</item>
+        <item name="blacklist">karaliste</item>
+        <item name="whitelist">beyazliste</item>
     </array>
 </resources>
