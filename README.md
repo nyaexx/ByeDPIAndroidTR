@@ -1,97 +1,77 @@
-# ByeDPI for Android
-
-**English** | [Русский](README-ru.md)
+# Android için ByeDPI
 
 <div style="text-align: center;">
   <img alt="ByeDPI logo" src=".github/images/logo.svg" width="100%" height="200px">
 </div>
 
 ---
+Bu uygulama yerel VPN Servisi ile DPI (Derin Paket İnceleme) ve Sansürü Aşmak için tasarlanmıştır. Bir SOCKS5 proxy ByeDPI çalıştırır ve tüm trafiği üzerinden yönlendirir.
+Varsayılan proje [ByeDPIAndroid](https://github.com/dovecoteescapee/ByeDPIAndroid/).
 
-Android application that runs a local VPN service to bypass DPI (Deep Packet Inspection) and censorship.
+## Kurulum
 
+Github sayfamızın [relases](https://github.com/nyaexx/ByeDPIAndroidTR/releases/) kısmından indirebilir ve direk android cihazınıza kurabilirsiniz.
 
-This application runs a SOCKS5 proxy [ByeDPI](https://github.com/hufrea/byedpi) and redirects all traffic through it.
+## Ayarlar
 
-## Installation
+Bazı engellemeleri aşmak için ayarları değiştirmeniz gerekebilir. Farklı ayarlar hakkında daha fazla bilgiyi [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonunda bulabilirsiniz.
 
-[<img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png"
-    alt="Get it on GitHub"
-    height="80">](https://github.com/dovecoteescapee/ByeDPIAndroid/releases)
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
-    alt="Get it on IzzyOnDroid"
-    height="80">](https://apt.izzysoft.de/fdroid/index/apk/io.github.dovecoteescapee.byedpi)
+(Türkiye için özel konfigürasyon ayarları yakında eklenecektir.)
 
-### Or use Obtainium
+## SSS (Sıkça Sorulan Sorular)
 
-1. Install [Obtainium](https://github.com/ImranR98/Obtainium/blob/main/README.md#installation)
-2. Add the app by URL:  
-   `https://github.com/dovecoteescapee/ByeDPIAndroid`
+### Uygulama root erişimi gerektiriyor mu?
+Hayır. Tüm uygulama özellikleri root olmadan çalışır.
 
-## Settings
+###  Bu bir VPN mi?
+Hayır. Uygulama, Android’deki VPN modunu trafiği yönlendirmek için kullanır ancak hiçbir şeyi uzaktaki bir sunucuya göndermemektedir. Trafiği şifrelemez ve IP adresinizi gizlemez.
 
-To bypass some blocks, you may need to change the settings. More about the various settings can be found in the [ByeDPI documentation](https://github.com/hufrea/byedpi/blob/v0.13/README.md).
+### Uygulama hangi verileri toplar?
+Hiçbir veri toplamaz. Uygulama, verileri uzak bir sunucuya göndermemektedir. Tüm trafik cihazda işlenir.
 
-## FAQ
+### Başka platformlar için mevcut mu?
+Benzer projeler mevcut.
 
-### I can't configure it. What to do?
+### DPI Nedir?
+DPI (Derin Paket İnceleme), trafiği analiz etme ve filtreleme teknolojisidir. Sağlayıcılar ve devlet kurumları tarafından, siteleri ve hizmetleri engellemek amacıyla kullanılır.
 
-You can ask for help in [discussion](https://github.com/dovecoteescapee/ByeDPIAndroid/discussions).
+### ByeDPI'yi AdGuard ile nasıl kullanırım?
 
-### Does the application require root access?
+  1. ByeDPI’yi proxy modunda çalıştırın.
 
-No. All application features work without root.
+  2. ByeDPI’yi AdGuard’ın "Uygulama yönetimi" sekmesinde istisnalara ekleyin.
 
-### Is this a VPN?
-
-No. The application uses the VPN mode on Android to redirect traffic, but does not send anything to a remote server. It does not encrypt traffic and does not hide your IP address.
-
-### How to use ByeDPI with AdGuard?
-
-1. Run ByeDPI in proxy mode.
-2. Add ByeDPI to AdGuard exceptions on the "App management" tab.
-3. In AdGuard settings, specify the proxy:
-
-   ```plaintext
-   Proxy type: SOCKS5
-   Proxy host: 127.0.0.1
-   Proxy port: 1080 (default)
+  3. AdGuard ayarlarında proxy’yi belirtin:
+    
+```plaintext
+Proxy türü: SOCKS5
+Proxy host: 127.0.0.1
+Proxy portu: 1080 (varsayılan)
    ```
 
-### What data does the application collect?
-
-None. The application does not send any data to a remote server. All traffic is processed on the device.
-
-### Are there any for other platforms?
-
-[Similar projects](https://github.com/ValdikSS/GoodbyeDPI/blob/master/README.md#similar-projects))
-
-### What is DPI?
-
-DPI (Deep Packet Inspection) is a technology for analyzing and filtering traffic. It is used by providers and government agencies to block sites and services.
-
-## Dependencies
+## Bağımlılıklar
 
 - [ByeDPI](https://github.com/hufrea/byedpi)
+- [ByeDPIAndroid](https://github.com/dovecoteescapee/ByeDPIAndroid/)
 - [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)
 
-## Building
+Uygulamanın Derlenmesi İçin Gereksinimler:
 
-For building the application, you need:
+  1. JDK 8 veya daha yenisi
 
-1. JDK 8 or later
-2. Android SDK
-3. Android NDK
-4. CMake 3.22.1 or later
+  2. Android SDK
 
-To build the application:
+  3. Android NDK
 
-1. Clone the repository with submodules:
-   ```bash
-   git clone --recurse-submodules
-   ```
-2. Run the build script from the root of the repository:
-   ```bash
-   ./gradlew assembleRelease
-   ```
-3. The APK will be in `app/build/outputs/apk/release/`
+  4. CMake 3.22.1 veya daha yenisi
+
+Uygulamayı Derlemek İçin:
+
+  1. Alt modüllerle birlikte depoyu klonlayın:
+    git clone --recurse-submodules
+
+  2. Depo kök dizininden derleme scriptini çalıştırın:
+    ./gradlew assembleRelease
+
+**APK dosyası şu dizinde olacaktır:
+app/build/outputs/apk/release/**
