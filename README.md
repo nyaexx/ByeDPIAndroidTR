@@ -24,13 +24,16 @@ Bazı engellemeleri aşmak için ayarları değiştirmeniz gerekebilir. Farklı 
 Hayır. Tüm uygulama özellikleri root olmadan çalışır.
 
 ###  Bu bir VPN mi?
-Hayır. Uygulama, Android’deki VPN modunu trafiği yönlendirmek için kullanır ancak hiçbir şeyi uzaktaki bir sunucuya göndermemektedir. Trafiği şifrelemez ve IP adresinizi gizlemez.
+Hayır. Uygulama, Android’deki VPN modunu trafiği yönlendirmek için kullanır ve hiçbir şeyi uzaktaki bir sunucuya göndermemektedir. Trafiği şifrelemez ve unutmayın IP adresinizi gizlemez.
 
 ### Uygulama hangi verileri toplar?
 Hiçbir veri toplamaz. Uygulama, verileri uzak bir sunucuya göndermemektedir. Tüm trafik cihazda işlenir.
 
 ### Başka platformlar için mevcut mu?
 Benzer projeler mevcut.
+- Linux için [Zapret](https://github.com/bol-van/zapret) (Önerilir)
+- Windows için [GoodByeDPITurkey](https://github.com/cagritaskn/GoodbyeDPI-Turkey) (Önerilir)
+- Her iki platform için [ByeDPI](https://github.com/hufrea/byedpi) kullanabilirsiniz ancak Türkçe topluluk desteği azdır.
 
 ### DPI Nedir?
 DPI (Derin Paket İnceleme), trafiği analiz etme ve filtreleme teknolojisidir. Sağlayıcılar ve devlet kurumları tarafından, siteleri ve hizmetleri engellemek amacıyla kullanılır.
@@ -52,7 +55,6 @@ Proxy portu: 1080 (varsayılan)
 ## Bağımlılıklar
 
 - [ByeDPI](https://github.com/hufrea/byedpi)
-- [ByeDPIAndroid](https://github.com/dovecoteescapee/ByeDPIAndroid/)
 - [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)
 
 Uygulamanın Derlenmesi İçin Gereksinimler:
@@ -68,10 +70,10 @@ Uygulamanın Derlenmesi İçin Gereksinimler:
 Uygulamayı Derlemek İçin:
 
   1. Alt modüllerle birlikte depoyu klonlayın:
-    git clone --recurse-submodules
+    ```git clone --recurse-submodules```
 
-  2. Depo kök dizininden derleme scriptini çalıştırın:
-    ./gradlew assembleRelease
+  3. Depo kök dizininden derleme scriptini çalıştırın:
+    ```./gradlew assembleRelease```
 
 **APK dosyası şu dizinde olacaktır:
 app/build/outputs/apk/release/**
