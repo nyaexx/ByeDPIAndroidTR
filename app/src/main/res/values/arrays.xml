@@ -3,12 +3,12 @@
     <array name="themes">
         <item name="system">Sistem</item>
         <item name="light">Açık</item>
-        <item name="dark">Koyu</item>
+        <item name="dark">Kapalı</item>
     </array>
     <array name="themes_entries">
-        <item name="system">sistem</item>
-        <item name="light">açık</item>
-        <item name="dark">koyu</item>
+        <item name="system">system</item>
+        <item name="light">light</item>
+        <item name="dark">dark</item>
     </array>
 
     <array name="byedpi_modes">
@@ -21,7 +21,7 @@
     </array>
 
     <array name="byedpi_desync_methods">
-        <item name="none">None</item>
+        <item name="none">Hiçbiri</item>
         <item name="split">Split</item>
         <item name="disorder">Disorder</item>
         <item name="fake">Fake</item>
@@ -39,12 +39,12 @@
 
     <array name="byedpi_hosts_modes">
         <item name="disable">Kapalı</item>
-        <item name="blacklist">Kara liste</item>
-        <item name="whitelist">Beyaz liste</item>
+        <item name="blacklist">Karaliste</item>
+        <item name="whitelist">Beyazliste</item>
     </array>
     <array name="byedpi_hosts_modes_entries">
-        <item name="disable">kapalı</item>
-        <item name="blacklist">karaliste</item>
-        <item name="whitelist">beyazliste</item>
+        <item name="disable">disable</item>
+        <item name="blacklist">blacklist</item>
+        <item name="whitelist">whitelist</item>
     </array>
 </resources>
