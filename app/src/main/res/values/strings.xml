@@ -49,7 +49,7 @@
     <string name="byedpi_category">ByeDPITurkey</string>
     <string name="about_category">Hakkında</string>
     <string name="command_line_editor">Komut satırı editörü</string>
-    <string name="ui_editor">UI editor</string>
+    <string name="ui_editor">UI editör</string>
     <string name="use_command_line_settings">Komut satırı editörünü kullan</string>
     <string name="desync_http">Desync HTTP</string>
     <string name="desync_https">Desync HTTPS</string>
