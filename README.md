@@ -80,10 +80,14 @@ Uygulamanın Derlenmesi İçin Gereksinimler:
 Uygulamayı Derlemek İçin:
 
   1. Alt modüllerle birlikte depoyu klonlayın:
-    ```git clone --recurse-submodules```
+```plaintext
+git clone --recurse-submodules
+   ```
 
   3. Depo kök dizininden derleme scriptini çalıştırın:
-    ```./gradlew assembleRelease```
+```plaintext
+./gradlew assembleRelease
+   ```
 
 **APK dosyası şu dizinde olacaktır:
 app/build/outputs/apk/release/**
