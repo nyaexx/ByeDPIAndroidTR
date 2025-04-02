@@ -10,13 +10,23 @@ Varsayılan proje [ByeDPIAndroid](https://github.com/dovecoteescapee/ByeDPIAndro
 
 ## Kurulum
 
-Github sayfamızın [relases](https://github.com/nyaexx/ByeDPIAndroidTR/releases/) kısmından indirebilir ve direk android cihazınıza kurabilirsiniz.
+Github sayfamızın [relases](https://github.com/nyaexx/ByeDPIAndroidTR/releases/latest) kısmından indirebilir ve direk android cihazınıza kurabilirsiniz.
 
 ## Ayarlar
 
-Bazı engellemeleri aşmak için ayarları değiştirmeniz gerekebilir. Farklı ayarlar hakkında daha fazla bilgiyi [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonunda bulabilirsiniz.
+Bazı engellemeleri aşmak için uygulamanın ayarlarını değiştirmeniz gerekebilir. Farklı yapılandırmalar hakkında daha fazla bilgiyi [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonunda bulabilirsiniz.
 
-(Türkiye için özel konfigürasyon ayarları yakında eklenecektir.)
+Ayarlar bölümünde, VPN modunun çalışmasını istemediğiniz uygulamaları kara listeye alabilir veya yalnızca belirli uygulamalarda çalışmasını istiyorsanız beyaz liste oluşturabilirsiniz.
+
+Örnek Komut:
+Komut satırı editörü üzerinden aşağıdaki parametrelerle çalıştırabilirsiniz:
+```plaintext
+ciadpi --proto=http,tls --disorder 1 --tlsrec 1+s
+```
+
+Bu komut, çoğu ISS’in DPI kurallarını aşmak için yeterli olacaktır. Ancak, bazı durumlarda ek argümanlar kullanmanız veya mevcut değerleri değiştirmeniz gerekebilir. [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonu, bu konuda detaylı bilgiler içermektedir. Eğer yine de çalıştıramazsanız, UI editör kısmından ayarları deneyerek farklı kombinasyonlar oluşturabilir veya dökümantasyona göz atarak uygun bir yöntem seçebilirsiniz.
+
+(Türkiye için özel konfigürasyon ayarları ve özel dökümantasyon yakında eklenecektir.)
 
 ## SSS (Sıkça Sorulan Sorular)
 
