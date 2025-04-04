@@ -1,7 +1,7 @@
 # Android için ByeDPI
 
 <div style="text-align: center;">
-  <img alt="ByeDPI logo" src=".github/images/logo.svg" width="100%" height="200px">
+  <img alt="ByeDPI logo" src=".github/images/logotr.svg" width="100%" height="200px">
 </div>
 
 ---
