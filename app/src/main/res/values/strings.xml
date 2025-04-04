@@ -14,7 +14,7 @@
     <string name="settings_unavailable">Lütfen ayarları değiştirmeden önce VPN servisini kapatın</string>
     <string name="title_settings">Ayarlar</string>
     <string name="save_logs">Günlükleri Kaydet</string>
-    <string name="reset_settings">Reset</string>
+    <string name="reset_settings">Sıfırla</string>
     <string name="logs_failed">Günlükleri kaydederken bir hata oluştu</string>
     <string name="proxy_address">%1$s:%2$s</string>
     <string name="theme_settings">Tema</string>

@@ -97,4 +97,27 @@
 
     </androidx.preference.PreferenceCategory>
 
+    <androidx.preference.PreferenceCategory
+        android:title="Çevirmenler">
+
+        <Preference
+            android:key="translator1"
+            android:title="nyaex"
+            android:icon="@drawable/ic_github_36">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/nyaexx/" />
+        </Preference>
+
+        <Preference
+            android:key="translator2"
+            android:title="shouyuma"
+            android:icon="@drawable/ic_github_36">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Hamzahsl" />
+        </Preference>
+
+    </androidx.preference.PreferenceCategory>
+
 </PreferenceScreen>
