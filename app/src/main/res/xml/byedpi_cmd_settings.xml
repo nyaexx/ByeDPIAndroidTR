@@ -12,7 +12,7 @@
             android:data="@string/byedpi_docs" />
     </Preference>
 
-    <androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="Komut Çalıştırma Bölümü">
 
         <com.takisoft.preferencex.EditTextPreference
             android:key="byedpi_cmd_args"
@@ -20,6 +20,29 @@
             android:dialogTitle="@string/command_line_arguments"
             android:inputType="textMultiLine"
             app:useSimpleSummaryProvider="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Kopyalanabilir argümanlar kategorisi -->
+    <androidx.preference.PreferenceCategory android:title="Hazır Argümanlar">
+        <Preference
+            android:key="copy_arg_example_1"
+            android:title="Hafif Etkili (Her ISS de Çalışmayabilir)"
+            android:summary="Kopyalamak için tıkla"
+            android:clickable="true"
+            android:onClick="onCopyArgumentClicked" />
+        <Preference
+            android:key="copy_arg_example_3"
+            android:title="Basit Ancak (Superonline,Bimcell) Çalışıyor"
+            android:summary="Kopyalamak için tıkla"
+            android:clickable="true"
+            android:onClick="onCopyArgumentClicked" />
+        <Preference
+            android:key="copy_arg_example_2"
+            android:title="Zorlu DPI İçin Ağır Yöntem"
+            android:summary="Kopyalamak için tıkla"
+            android:clickable="true"
+            android:onClick="onCopyArgumentClicked" />
 
     </androidx.preference.PreferenceCategory>
 

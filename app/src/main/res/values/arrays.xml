@@ -26,7 +26,7 @@
         <item name="disorder">Disorder</item>
         <item name="fake">Fake</item>
         <item name="oob">Out-of-band</item>
-        <item name="oob">Disordered out-of-band</item>
+        <item name="oob">Bant dışı oob</item>
     </array>
     <array name="byedpi_desync_methods_entries">
         <item name="none">none</item>
