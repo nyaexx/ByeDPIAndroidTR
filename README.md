@@ -21,12 +21,14 @@ Ayarlar bölümünde, VPN modunun çalışmasını istemediğiniz uygulamaları 
 Örnek Komut:
 Komut satırı editörü üzerinden aşağıdaki parametrelerle çalıştırabilirsiniz:
 ```plaintext
-ciadpi --proto=http,tls --disorder 1 --tlsrec 1+s
+-Ku -a3 -An -Kt,h -s0 -o1 -d2 -r2+s -Ar -At -f-1 -As -b+700 --tls-sni=www.cloudflare.com --ttl=2 --fake 7 --md5sig
 ```
 
-Bu komut, çoğu ISS’in DPI kurallarını aşmak için yeterli olacaktır. Ancak, bazı durumlarda ek argümanlar kullanmanız veya mevcut değerleri değiştirmeniz gerekebilir. [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonu, bu konuda detaylı bilgiler içermektedir. Eğer yine de çalıştıramazsanız, UI editör kısmından ayarları deneyerek farklı kombinasyonlar oluşturabilir veya dökümantasyona göz atarak uygun bir yöntem seçebilirsiniz.
+Bu komut şuan için ISS lerin DPI kurallarını aşmak için yeterli olabilir, ancak çalışmadığı veya performans düşüşü yaşattığı durumlar gözlemlenebilir bu durumda belli argümanları değiştirmeniz veya değerlerle oynamanız gerekir. [ByeDPI](https://github.com/hufrea/byedpi/blob/v0.13/README.md) dökümantasyonu, bu konuda detaylı bilgiler içermektedir. Eğer yine de çalıştıramazsanız, UI editör kısmından ayarları deneyerek farklı kombinasyonlar oluşturabilir veya dökümantasyona göz atarak uygun bir yöntem seçebilirsiniz.
 
-(Türkiye için özel konfigürasyon ayarları ve özel dökümantasyon yakında eklenecektir.)
+Türkiye için uygulamanın komut satırı editörü içerisine özel birkaç argüman eklenmiştir. Test edebilirsiniz eğer yetersiz olursa bizimle iletişime geçebilirsiniz discord: **nyaex, shouyuma** 
+
+(Türkiye için özel dökümantasyon yakında eklenecek)
 
 ## SSS (Sıkça Sorulan Sorular)
 
@@ -66,28 +68,3 @@ Proxy portu: 1080 (varsayılan)
 
 - [ByeDPI](https://github.com/hufrea/byedpi)
 - [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)
-
-Uygulamanın Derlenmesi İçin Gereksinimler:
-
-  1. JDK 8 veya daha yenisi
-
-  2. Android SDK
-
-  3. Android NDK
-
-  4. CMake 3.22.1 veya daha yenisi
-
-Uygulamayı Derlemek İçin:
-
-  1. Alt modüllerle birlikte depoyu klonlayın:
-```plaintext
-git clone --recurse-submodules
-   ```
-
-  3. Depo kök dizininden derleme scriptini çalıştırın:
-```plaintext
-./gradlew assembleRelease
-   ```
-
-**APK dosyası şu dizinde olacaktır:
-app/build/outputs/apk/release/**
