@@ -48,7 +48,7 @@
             android:key="byedpi_ui_settings"
             android:title="@string/ui_editor"
             app:useSimpleSummaryProvider="true"
-            app:fragment="io.github.dovecoteescapee.byedpi.fragments.ByeDpiUISettingsFragment" />
+            app:fragment="https://github.com/nyaexx/ByeDPIAndroidTR" />
 
         <Preference
             android:key="byedpi_cmd_settings"
