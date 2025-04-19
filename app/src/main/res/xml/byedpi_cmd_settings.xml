@@ -5,7 +5,7 @@
 
     <Preference
         android:key="byedpi_readme"
-        android:title="Dökümantasyon"
+        android:title="Komut Dökümantasyonu"
         android:icon="@drawable/ic_github_36">
         <intent
             android:action="android.intent.action.VIEW"
@@ -18,13 +18,15 @@
             android:key="byedpi_cmd_args"
             android:title="@string/command_line_arguments"
             android:dialogTitle="@string/command_line_arguments"
+            android:defaultValue="ciadpi --proto=http,tls --disorder 1 --tlsrec 1+s"
             android:inputType="textMultiLine"
             app:useSimpleSummaryProvider="true" />
 
     </androidx.preference.PreferenceCategory>
 
     <!-- Kopyalanabilir argümanlar kategorisi -->
-    <androidx.preference.PreferenceCategory android:title="Hazır Argümanlar">
+    <androidx.preference.PreferenceCategory android:title="Hazır Argümanlar"
+        android:summary="Uygun komutu kopyalayıp üstte çalıştırın.">
         <Preference
             android:key="copy_arg_example_1"
             android:title="Hafif Etkili (Her ISS de Çalışmayabilir)"
